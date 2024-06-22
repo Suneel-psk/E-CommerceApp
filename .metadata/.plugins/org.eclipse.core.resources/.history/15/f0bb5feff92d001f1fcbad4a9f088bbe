@@ -1,0 +1,40 @@
+package in.psk.service;
+
+import java.time.LocalDate;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
+
+import in.psk.dtos.OrdersDto;
+import in.psk.entity.Orders;
+import in.psk.mapper.OrderMapper;
+import in.psk.repo.OrdersRepository;
+
+@Service
+public class ReportsServiceImpl implements ReportsService {
+    @Autowired
+    private OrdersRepository orderRepository;
+
+    @Override
+    public List<OrdersDto> getOrders(String status, LocalDate startDate, LocalDate endDate) {
+        Orders searchOrder = new Orders();
+        if (status != null && !status.isEmpty()) {
+            searchOrder.setOrderStatus(status);
+        }
+        if (startDate != null) {
+            searchOrder.setOrderDate(startDate);
+        }
+        if (endDate != null) {
+            searchOrder.setOrderDate(endDate);
+        }
+
+        Example<Orders> exp = Example.of(searchOrder);
+        List<Orders> orders = orderRepository.findAll(exp);
+       return orders.stream().map(OrderMapper::convertToDto).collect(Collectors.toList());
+     
+    }
+}

@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: E-CommerceApp-01-EurekaServer

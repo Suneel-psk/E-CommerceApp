@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Example"/>
+    <fullyQualifiedTypeName name="in.psk.response.ApiResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="in.psk.utils.ExcelGenerator"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.lowagie.text.Document"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+    <fullyQualifiedTypeName name="com.lowagie.text.pdf.PdfWriter"/>
+    <fullyQualifiedTypeName name="com.lowagie.text.Font"/>
+    <fullyQualifiedTypeName name="in.psk.utils.PdfGenerator"/>
+    <fullyQualifiedTypeName name="in.psk.mapper.OrderMapper"/>
+    <fullyQualifiedTypeName name="in.psk.dtos.OrdersDto"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.criteria.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+server:
+  port: 2222
+spring:
+  application:
+    name: E-CommerceApp-03-ConfigServer
+  cloud:
+    config:
+      server:
+          git:
+           uri: https://github.com/Suneel-psk/SB-Configuration-Properties.git
+           clone-on-start: true
+   
